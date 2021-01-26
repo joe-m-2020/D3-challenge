@@ -1,9 +1,9 @@
 // @TODO: YOUR CODE HERE!
 // Chart Params
 var svgWidth = 800;
-var svgHeight = 500;
+var svgHeight = 600;
 
-var margin = { top: 20, right: 100, bottom: 60, left: 100 };
+var margin = { top: 20, right: 100, bottom: 60, left: 60 };
 
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
