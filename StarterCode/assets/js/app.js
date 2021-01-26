@@ -34,6 +34,7 @@ d3.csv("assets/data/data.csv").then(function(censusData) {
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x));
 
+    
 // Add Y axis
 var yrange = d3.extent(censusData.map(function(d){return d.obesity}));
   var y = d3.scaleLinear()
