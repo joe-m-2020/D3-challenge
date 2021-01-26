@@ -52,7 +52,7 @@ var dots =chartGroup.append('g')
 dots.append("circle")
   .attr("cx", function (d) { return x(d.income); } )
   .attr("cy", function (d) {  return y(d.obesity); } )
-  .attr("r", 10)
+  .attr("r", 12)
   .style("fill", "#69b3a2");
 
 dots.append('text')
