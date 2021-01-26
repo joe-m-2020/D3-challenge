@@ -3,7 +3,7 @@
 var svgWidth = 560;
 var svgHeight = 500;
 
-var margin = { top: 20, right: 50, bottom: 60, left: 50 };
+var margin = { top: 20, right: 20, bottom: 60, left: 60 };
 
 var width = svgWidth - margin.left - margin.right;
 var height = svgHeight - margin.top - margin.bottom;
@@ -61,4 +61,17 @@ dots.append('text')
   .attr("y", function (d) {  return y(d.obesity)+6; } )
   .style("font-size", "13px")
 
+// Add X axis label:
+svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("x", width)
+    .attr("y", height + margin.top + 40)
+    .text("Income");
+// Y axis label:
+svg.append("text")
+    .attr("text-anchor", "end")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -margin.left+80)
+    .attr("x", -margin.top)
+    .text("Obesity");
 });
